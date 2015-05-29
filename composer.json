@@ -1,8 +1,10 @@
 {
+    "name": "fayebsg/sugarcrm-cli",
+    "homepage": "https://github.com/fayebsg/sugarcrm-cli",
+    "description": "CLI Interface to SugarCRM Administrative functions",
     "require": {
         "symfony/console": "v2.4.4"
     },
-
     "autoload": {
         "psr-4": {
             "Fbsg\\": "src"
