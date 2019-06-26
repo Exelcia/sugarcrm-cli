@@ -1,6 +1,6 @@
 <?php
 
-namespace Fbsg\SugarCLI;
+namespace Exelcia\SugarCLI;
 
 class Application extends \Symfony\Component\Console\Application
 {

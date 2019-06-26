@@ -1,6 +1,6 @@
 <?php
 
-use Fbsg\SugarCLI\Application;
+use Exelcia\SugarCLI\Application;
 
 $application = new Application();
 $config      = require(__DIR__ . '/../config/config.php');

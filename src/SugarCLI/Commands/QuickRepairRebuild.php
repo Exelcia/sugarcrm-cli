@@ -1,6 +1,6 @@
 <?php
 
-namespace Fbsg\SugarCLI\Commands;
+namespace Exelcia\SugarCLI\Commands;
 
 use DBManagerFactory;
 use RepairAndClear;
@@ -14,7 +14,7 @@ use User;
 /**
  * Class QuickRepairRebuild
  *
- * @package Fbsg\SugarCLI\Commands
+ * @package Exelcia\SugarCLI\Commands
  */
 class QuickRepairRebuild extends Command
 {

@@ -3,7 +3,7 @@
 return array(
 
     'commands' => array(
-        '\Fbsg\SugarCLI\Commands\QuickRepairRebuild'
+        '\Exelcia\SugarCLI\Commands\QuickRepairRebuild'
     )
 
 );

@@ -1,13 +1,16 @@
 {
-    "name": "fayebsg/sugarcrm-cli",
-    "homepage": "https://github.com/fayebsg/sugarcrm-cli",
+    "name": "exelcia/sugarcrm-cli",
+    "homepage": "https://github.com/Exelcia/sugarcrm-cli",
     "description": "CLI Interface to SugarCRM Administrative functions",
     "require": {
-        "symfony/console": "v2.4.4"
+        "symfony/console": "^3.4"
     },
     "autoload": {
         "psr-4": {
-            "Fbsg\\": "src"
+            "Exelcia\\": "src"
         }
-    }
+    },
+    "bin": [
+        "sugarcrm-cli"
+    ]
 }
