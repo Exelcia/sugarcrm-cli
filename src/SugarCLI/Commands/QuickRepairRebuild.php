@@ -44,10 +44,12 @@ class QuickRepairRebuild extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $output->writeln('Repair in progress');
         $this->checkDirectory($input->getArgument('path'), $output);
         $this->initSugar();
         $this->repair($output);
         $this->tearDown();
+        $output->writeln('Done !!!');
     }
 
     /**
