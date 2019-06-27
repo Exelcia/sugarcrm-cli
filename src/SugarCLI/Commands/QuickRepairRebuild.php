@@ -2,14 +2,14 @@
 
 namespace Exelcia\SugarCLI\Commands;
 
-use DBManagerFactory;
+use User;
 use RepairAndClear;
+use DBManagerFactory;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use User;
 
 /**
  * Class QuickRepairRebuild
@@ -89,6 +89,9 @@ class QuickRepairRebuild extends Command
         }
 
         require_once('config.php');
+        if (file_exists('config_override.php')) {
+            require_once('config_override.php');
+        }
         if (!empty($sugar_config)) {
             $GLOBALS['sugar_config'] = $sugar_config;
         }
